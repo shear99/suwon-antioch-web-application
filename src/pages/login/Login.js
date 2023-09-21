@@ -7,10 +7,10 @@ export default function Login() {
         email: "",
         password: ""
     });
-    const [login] = useLogin();
+    const {login} = useLogin();
 
     const handleChange = (event) => {
-        const [name, value] = event.target;
+        const {name, value} = event.target;
         setLoginData(prevState => ({
             ...prevState,
             [name]: value
